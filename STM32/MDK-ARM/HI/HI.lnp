@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"hi\startup_stm32f103xb.o"
+"hi\fonts.o"
+"hi\ssd1306.o"
+"hi\main.o"
+"hi\stm32f1xx_it.o"
+"hi\stm32f1xx_hal_msp.o"
+"hi\stm32f1xx_hal_gpio_ex.o"
+"hi\stm32f1xx_hal_i2c.o"
+"hi\stm32f1xx_hal.o"
+"hi\stm32f1xx_hal_rcc.o"
+"hi\stm32f1xx_hal_rcc_ex.o"
+"hi\stm32f1xx_hal_gpio.o"
+"hi\stm32f1xx_hal_dma.o"
+"hi\stm32f1xx_hal_cortex.o"
+"hi\stm32f1xx_hal_pwr.o"
+"hi\stm32f1xx_hal_flash.o"
+"hi\stm32f1xx_hal_flash_ex.o"
+"hi\stm32f1xx_hal_exti.o"
+"hi\stm32f1xx_hal_tim.o"
+"hi\stm32f1xx_hal_tim_ex.o"
+"hi\stm32f1xx_hal_uart.o"
+"hi\system_stm32f1xx.o"
+--strict --scatter "HI\HI.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "HI.map" -o HI\HI.axf
